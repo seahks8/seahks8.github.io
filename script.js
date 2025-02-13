@@ -6,12 +6,13 @@
 
       const formData = {
         name: document.getElementById('name').value,
+        contact: document.getElementById('contact').value,  
         email: document.getElementById('email').value,
         message: document.getElementById('message').value
       };
 
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbxZvZswU-toyCm9_h1LmL5HA82WPTPtHaUnlTdFmHkaedbvKzPUPeqP2F-A7m9SgFyo/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyOTdOW-_v7Hws2sTYyfqVl7j9sgL8NZsi2mNvI5W-iIk3JRO39CgbxXWV3Oy-kZHjS/exec', {
           method: 'POST',
           body: JSON.stringify(formData)
         });
