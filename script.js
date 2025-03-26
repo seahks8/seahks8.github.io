@@ -13,7 +13,7 @@ form.addEventListener('submit', async (event) => {
   };
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzbErEC_L2_-m-rawWBTf7aEYUeck3VuzeqjY6MUbZJ963tt9lAxvZgfU-g5FyGVPjq/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbyXBSjOE6JIvEVfcaVEnXXuu6cznujio7NKU7yb7bxeuHN9NUHDkOkzdBKvgmuOPAXn/exec', {
       method: 'POST',
       body: JSON.stringify(formData)
     });
