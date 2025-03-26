@@ -11,8 +11,14 @@
     <h2>Contact Us</h2>
     <form id="contact-form">
       <input type="text" id="name" placeholder="Your Name" required />
-      <input type="text" id="contact" placeholder="Your Contact No." required />
+	    <input type="text" id="hp" placeholder="Your Contact No." required />
       <input type="email" id="email" placeholder="Your Email" required />
+      <select id="car" required>
+        <option value="">Select a Car</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Saab">Saab</option>
+        <option value="Audi">Audi</option>
+      </select>
       <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Submit</button>
     </form>
