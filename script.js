@@ -8,12 +8,16 @@ form.addEventListener('submit', async (event) => {
     name: document.getElementById('name').value,
     hp: document.getElementById('hp').value,
     email: document.getElementById('email').value,
-    car: document.getElementById('car').value,
+    address: document.getElementById('address').value,
+    subscription: document.getElementById('subscription').value,
+    msticker: document.getElementById('msticker').value,
+    nmsticker: document.getElementById('nmsticker').value,
+    noplate: document.getElementById('noplate').value,
     message: document.getElementById('message').value
   };
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbyXBSjOE6JIvEVfcaVEnXXuu6cznujio7NKU7yb7bxeuHN9NUHDkOkzdBKvgmuOPAXn/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwHE3h8DAx4LWAsafYzn-eIQCZsjuREFs91VTAIUQO3oUiHVp8Nl1e9RbIpUkS1HbWS/exec', {
       method: 'POST',
       body: JSON.stringify(formData)
     });
