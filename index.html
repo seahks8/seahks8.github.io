@@ -3,23 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>SNS Form</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="form-container">
-    <h2>Contact Us</h2>
+    <h2>SNS Form</h2>
+    <h3>Fill in this form</h3>
     <form id="contact-form">
       <input type="text" id="name" placeholder="Your Name" required />
 	    <input type="text" id="hp" placeholder="Your Contact No." required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <select id="car" required>
-        <option value="">Select a Car</option>
-        <option value="Volvo">Volvo</option>
-        <option value="Saab">Saab</option>
-        <option value="Audi">Audi</option>
+      <input type="email" id="email" placeholder="Your Email" />
+      <input type="text" id="address" placeholder="Your Address" required />
+      <select id="subscription" >
+        <option value="">Select Payment Period</option>
+        <option value="Jan-Dec RM720">Jan-Dec RM720</option>
+        <option value="Jan-Jun RM390">Jan-Jun RM390</option>
+        <option value="Jul-Dec RM390">Jul-Dec RM390</option>
+        <option value="Jan-Mar RM210">Jan-Mar RM210</option>
+        <option value="Apr-Jun RM210">Apr-Jun RM210</option>
+        <option value="Jul-Sep RM210">Jul-Sep RM210</option>
+        <option value="Oct-Dec RM210">Oct-Dec RM210</option>
       </select>
+      <input type="text" id="msticker" placeholder="No. of Member Sticker @RM5 required"  />
+      <input type="text" id="nmsticker" placeholder="No. of Non Member Sticker @RM5 required"  />
+      <textarea id="noplate" placeholder="Your Car Number Plates" rows="5" required></textarea>
       <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <h3>Note: Fill in this form</h3>
       <button type="submit">Submit</button>
     </form>
     <p id="response-message"></p>
