@@ -34,15 +34,17 @@
         <option value="Jul-Sep RM210">Jul-Sep RM210</option>
         <option value="Oct-Dec RM210">Oct-Dec RM210</option>
       </select>
-      <input type="text" id="msticker" placeholder="No. of Member Sticker @RM5 required"  />
-      <input type="text" id="nmsticker" placeholder="No. of Non Member Sticker @RM5 required"  />
+      <input type="number" id="msticker" placeholder="No. of Member Sticker @RM5 required" oninput="calculateTotal()" />
+      <input type="number" id="nmsticker" placeholder="No. of Non Member Sticker @RM15 required" oninput="calculateTotal()"  />
       <textarea id="noplate" placeholder="Your Car Number Plates" rows="5" required></textarea>
       <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="text" id="totalCost" placeholder="Total Cost (RM)" readonly />
+      <p>Your payment receipt, stickers, gate-tag etc will be sent/dropped into your house mail box after this 
+        form is submitted and the payment received in our bank account.</p>
+      <p>Please contact SNS Admin via WhatsApp at <b>018-236 5168</b> if you do not receive the above after 1 week from the date of submission.</p>
+      <p id="form-response-message" style="color: rgb(128, 47, 0);"></p>
       <button type="submit">Submit</button>
-    </form>
-    <p>Your payment receipt, stickers, gate-tag etc will be sent/dropped into your house mail box after this 
-    form is submitted and the payment received in our bank account.</p>
-    <p>Please contact SNS Admin via WhatsApp at <b>018-236 5168</b> if you do not receive the above after 1 week from the date of submission.</p>
+    </form>  
   </div>
 	<script src="script.js"></script>
 </body>
